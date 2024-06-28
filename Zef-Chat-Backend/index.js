@@ -20,6 +20,8 @@ const MessageModel = require('./models/messageModel');
 
 dbConnect();
 
+const buildPath = path.normalize(path.join(__dirname , "../Zef-Chat-Frontend/dist"));
+app.use(express.static(buildPath));
 
 const chats = {};
 
