@@ -9,7 +9,7 @@ const path = require("path");
 const dbConnect = require('./db');
 const UserModel = require('./models/userModel');
 dotenv.config({path: process.env.DOTENV_CONFIG_PATH  || path.resolve(__dirname, "./config.env") });
-const { verifytoken, inviteUser } = require('./controllers/usercontroler');
+const { verifytoken, inviteUser } = require('./controllers/userControler');
 const ChatModel = require('./models/chatModel');
 const { loginSoket, verifyOtpSocket } = require('./sockets/auth');
 const { updateChatPrivacy } = require('./sockets/chat');
