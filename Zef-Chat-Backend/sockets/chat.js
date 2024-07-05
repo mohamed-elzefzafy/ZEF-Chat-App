@@ -1,4 +1,4 @@
-const { verifytoken } = require("../controllers/usercontroler");
+const { verifytoken } = require("../controllers/userControler");
 const ChatModel = require("../models/chatModel");
 
 const updateChatPrivacy =   async(data) => {

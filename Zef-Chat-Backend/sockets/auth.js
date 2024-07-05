@@ -1,4 +1,4 @@
-const { login, verifyOtp } = require("../controllers/usercontroler");
+const { login, verifyOtp } = require("../controllers/userControler");
 
 
 const loginSoket = (socket) => async(data) => {
